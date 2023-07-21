@@ -117,10 +117,11 @@ def animal_RFID_to_details(disp, animal_rfid):
       "skip": 0
     }
 
-    response = requests.post(url, headers=headers, data=json.dumps(data), cookies=requests.utils.dict_from_cookiejar(requests.get(url).cookies))
+    response = requests.post(url, headers=headers, data=json.dumps(data), cookies=requests.utils.dict_from_cookiejar(requests.get(url).cookies), timeout=5)
     response_json = response.json()
+    print(response_json)
     # display wrong chip screen when the RFID isn't found in DB
-    if response_json['Count'] == 0:
+    if len(response_json) == 0 or response_json['Count'] == 0:
         print("Couldn't find chip")
         display_chip_not_found(disp)
         return
@@ -151,6 +152,10 @@ def main():
     while True:
         display_initial_waiting_dog(disp)
         RFID = input("Enter Animal RFID: ")
+        if not len(RFID.strip()):
+            display_chip_not_found(disp)
+            time.sleep(5)
+            continue
         details = animal_RFID_to_details(disp, RFID)
         if details:
             display_dog_details(disp,details) 
