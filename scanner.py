@@ -116,8 +116,12 @@ def animal_RFID_to_details(disp, animal_rfid):
       "top": 10,
       "skip": 0
     }
-
-    response = requests.post(url, headers=headers, data=json.dumps(data), cookies=requests.utils.dict_from_cookiejar(requests.get(url).cookies), timeout=5)
+    response = ''
+    try:
+        response = requests.post(url, headers=headers, data=json.dumps(data), cookies=requests.utils.dict_from_cookiejar(requests.get(url).cookies), timeout=5)
+    except requests.exceptions.ConnectionError:
+        print(f"Connection error for {animal_rfid}. Skipping...")
+        return
     response_json = response.json()
     print(response_json)
     # display wrong chip screen when the RFID isn't found in DB
