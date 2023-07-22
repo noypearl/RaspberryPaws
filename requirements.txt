@@ -1,0 +1,6 @@
+Pillow==8.4.0
+RPi.GPIO==0.7.0
+requests==2.25.1
+Adafruit-PureIO==1.1.11
+Adafruit-SSD1306==1.6.2
+
