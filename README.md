@@ -2,9 +2,11 @@
 # RaspberryPaws
 A great mix of love for dogs & raspberry.
 <br>
-Link to the full writeup: https://medium.com/@60noypearl/raspberrypaws-lost-animals-rfid-scanner-68d57cd4bd0
+Link to the full writeup: https://medium.com/@60noypearl/raspberrypaws-lost-animals-rfid-scanner-68d57cd4bd0 <br>
+See the POC video - https://youtu.be/dwFgCbXhDRc
 <br><br>
 <img width="365" alt="Photo of actual project" src="https://github.com/noypearl/RaspberryPaws/assets/11259340/01dc86f0-11fa-48b4-8134-1634df6908c1">
+<img width="365" alt="image" src="https://github.com/noypearl/RaspberryPaws/assets/11259340/0821b82f-47d5-491d-ae15-1d872976749a">
 
 ## What
 An Animal RFID scanner that shows you instantly the owner's phone number (and a few other details) for lost dogs.
