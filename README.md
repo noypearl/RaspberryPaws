@@ -13,10 +13,10 @@ An Animal RFID scanner that shows you instantly the owner's phone number (and a 
 <br>
 ## Howto
 I advise you to [read the writeup](https://medium.com/@60noypearl/raspberrypaws-lost-animals-rfid-scanner-68d57cd4bd0) so you'll understand how to set up the environment. You will also need to:
-* Install the following library in RPi to use OLED 0.91"
+* Install the following libraries in RPi to use OLED 0.91"
 
 ```
-pip install Adafruit-SSD1306
+pip install Adafruit-SSD1306 Pillow
 ```
 * Clone this repo
 ```
