@@ -3,7 +3,7 @@
 A great mix of love for dogs & raspberry.
 <br>
 Link to the full writeup: https://medium.com/@60noypearl/raspberrypaws-lost-animals-rfid-scanner-68d57cd4bd0 <br>
-See the POC video - https://youtu.be/dwFgCbXhDRc
+See the POC video - https://youtu.be/FA_y9DbqpAc
 <br><br>
 <img width="350" alt="scanme" src="https://github.com/noypearl/RaspberryPaws/assets/11259340/dab678fb-2f93-4b40-9584-193f2a2cffa8">
 <img width="350" alt="scanned" src="https://github.com/noypearl/RaspberryPaws/assets/11259340/6def3fa0-ecf2-41b0-b059-c4db49747e45">
